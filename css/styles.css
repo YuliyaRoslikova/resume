@@ -7,15 +7,19 @@ body {
   display: flex;
   flex-direction: row-reverse;
   width: 1200px;
-  background-color: #fff;
-  margin: 40px auto;
-  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  /* need to be commented out for printing in PDF  */
+  /* background-color: #fff; */
+  /*  */
+  margin: 10px auto;
+  /* need to be commented out for printing in PDF  */
+  /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
+  /*  */
 }
 
 /* main content section */
 
 .main-content-section {
-  padding: 50px 50px;
+  padding: 40px 35px;
 }
 
 .main-content-title {
@@ -57,8 +61,10 @@ body {
 }
 
 .my-projects-section {
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
+  /* margin: 0 0 50px 0; */
 }
+
 .my-projects-list {
   padding: 0 0 0 17px;
 }
@@ -84,6 +90,7 @@ body {
   color: #595959;
   margin-left: 5px;
 }
+
 .my-projects-text {
   font-style: normal;
   font-weight: normal;
@@ -100,7 +107,8 @@ body {
 }
 
 .my-work-experience-company {
-  color: #fb6d3a;
+  /* color: #fb6d3a; */
+  color: #441dc4;
 }
 
 .my-work-experience-position {
@@ -111,19 +119,35 @@ body {
   margin: 0 0 10px 0;
 }
 
+.my-work-experience-link {
+  color: navy;
+  text-decoration: none;
+}
+
+.my-work-experience-link-git {
+  text-decoration-line: underline;
+}
+
+.my-work-experience-link:hover {
+  text-decoration: underline;
+}
+
 .my-work-experience-period {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #a8a8a8;
+  color: rgb(10, 91, 10);
+  /* color: #a8a8a8; */
   margin: 0 0 10px 0;
 }
 
-.my-work-experience-duties {
+.my-work-experience-duties,
+.my-project-experience-duties {
   padding: 0 0 0 18px;
 }
 
+.my-project-experience,
 .my-work-experience-duty {
   font-style: normal;
   font-weight: normal;
@@ -132,8 +156,18 @@ body {
   color: #595959;
 }
 
+.my-project-experience-duty {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  list-style-type: none;
+}
+
+.my-project-experience-company-block,
 .my-work-experience-company-block {
-  margin: 0 15px 0 0;
+  margin: 15px 15px;
 }
 
 /* my education */
@@ -144,7 +178,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   margin: 0 0 10px 0;
-  color: #fb6d3a;
+  /* color: #fb6d3a; */
+  color: #441dc4;
 }
 
 .my-education-item {
@@ -159,16 +194,17 @@ body {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #a8a8a8;
+  /* color: #a8a8a8; */
+  color: rgb(10, 91, 10);
   margin: 0 0 20px 0;
 }
 
 /* sidebar-section */
 
 .sidebar-section {
-  background-color: #1e2939;
-  width: 370px;
-  padding: 40px 0;
+  background-color: #77797b;
+  width: 570px;
+  padding: 40px;
 }
 
 .contacts-section,
@@ -176,6 +212,7 @@ body {
 .soft-skills-section,
 .socials-section {
   margin: 50px 0 0 40px;
+
 }
 
 .sidebar-title {
@@ -185,6 +222,13 @@ body {
   line-height: 27px;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
 }
 
 /* contacts section */
@@ -215,7 +259,7 @@ body {
 .tech-skills-item,
 .soft-skills-item,
 .social-item {
-  color: #fb6d3a;
+  color: #441dc4;
 }
 
 .tech-skills-item-text {
@@ -240,6 +284,7 @@ body {
   line-height: 24px;
   color: #fff;
 }
+
 /* socials section */
 
 .socials-section {
