@@ -3,315 +3,194 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My resume</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
+    <title>Yuliya Roslikova - QA Engineer (with Frontend Expertise)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!--main container-->
-    <div class="main-container">
-      <!-- main content section-->
-      <div class="main-content-section">
-        <!--about me section-->
-        <div class="about-me-section">
-          <h1>Yuliya Roslikova</h1>
-          <h2 class="about-me-profession">Full-Stack Developer</h2>
-          <p class="about-me-description">
-            Passionate Full-Stack Developer with extensive experience in software testing, combining
-            analytical skills and well-developed organizational abilities with a solid understanding
-            of the development lifecycle. A strong team player with self-motivation and excellent
-            communication skills. Enjoys learning new technologies and paying close attention to
-            details. Takes pride in work and consistently strives to ensure customer satisfaction.
-            Positive and friendly by nature.
-          </p>
-        </div>
-        <!--my project experience-->
-        <div class="my-project-experience-section">
-          <h3 class="main-content-title">Project Experience</h3>
-          <!--project 4-->
-          <div class="my-work-experience-company-block">
-            <h4 class="my-work-experience-position">
-              <a
-                href="https://goit-typescript-hw-02-liart-eta.vercel.app/"
-                target="_blank"
-                class="my-work-experience-link"
-                >Image Search Service</a
-              >
-              <a
-                href="https://github.com/YuliyaRoslikova/goit-typescript-hw-02"
-                target="_blank"
-                class="my-work-experience-link-git"
-                >GitHub</a
-              >
-              <span class="my-work-experience-company">(TypeScript)</span>
-            </h4>
-            <p class="my-work-experience-period">Role: Developer. Individual project.</p>
-            <div class="my-project-experience">
-              Implemented the ability to get images from the Unsplash image service using HTTP
-              requests. Typed: objects, arrays, functions, components, props, states, hooks, and
-              event handlers.
+    <div class="wrapper">
+      
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <img class="my-photo" src="./img/photo.jpg" alt="Yuliya Roslikova" />
+
+          <div class="contacts-container">
+            <h3 class="section__title">Contacts</h3>
+            <div class="contact">
+              <div class="contacts-link-type">Phone</div>
+              <a class="contacts-link" href="tel:+380953491737">+380 95 349 17 37</a>
+            </div>
+            <div class="contact">
+              <div class="contacts-link-type">E-mail</div>
+              <a class="contacts-link" href="mailto:julia.roslikov@gmail.com">julia.roslikov@gmail.com</a>
+            </div>
+            <div class="contact">
+              <div class="contacts-link-type">LinkedIn</div>
+              <a class="contacts-link" target="_blank" href="https://www.linkedin.com/in/yuliya-roslikova/">Yuliya Roslikova</a>
+            </div>
+            <div class="contact">
+              <div class="contacts-link-type">GitHub</div>
+              <a class="contacts-link" target="_blank" href="https://github.com/YuliyaRoslikova">YuliyaRoslikova</a>
+            </div>
+            <div class="contact">
+              <div class="contacts-link-type">Location</div>
+              <span class="contacts-link">Khmelnytskyi, Ukraine</span>
             </div>
           </div>
-          <!--project 3-->
-          <div class="my-project-experience-company-block">
-            <h4 class="my-work-experience-position">
-              <a
-                href="https://goit-react-hw-08-gamma-two.vercel.app/"
-                target="_blank"
-                class="my-work-experience-link"
-                >Phonebook</a
-              >
-              <a
-                href="https://github.com/YuliyaRoslikova/goit-react-hw-08"
-                target="_blank"
-                class="my-work-experience-link-git"
-                >GitHub</a
-              >
-              <span class="my-work-experience-company"
-                >(React: Hooks, Routers, Redux, Redux Toolkit)</span
-              >
-            </h4>
-            <p class="my-work-experience-period">Role: Developer. Individual project.</p>
-            <div class="my-project-experience">
-              A simple phonebook that supports all the necessary operations with the contact
-              collection, as well as registration, log in/log out, add/ remove/filter contacts and
-              updating the user using JWT.
-            </div>
-          </div>
-          <!--project 2-->
-          <div class="my-project-experience-company-block">
-            <h4 class="my-work-experience-position">
-              <a
-                href="https://sergeiantonenko.github.io/goit-js-project-group13/"
-                target="_blank"
-                class="my-work-experience-link"
-                >Bookshelf</a
-              >
-              <a
-                href="https://github.com/SergeiAntonenko/goit-js-project-group13"
-                target="_blank"
-                class="my-work-experience-link-git"
-                >GitHub</a
-              >
-              <span class="my-work-experience-company">(JavaScript, Vite, Trello)</span>
-            </h4>
-            <p class="my-work-experience-period">
-              Role: Scrum master, Developer (modal section, loader, header navigation, scroll). Team
-              project.
-            </p>
-            <div class="my-project-experience">
-              An online platform with a responsive layout that provides convenient access to a wide
-              range of diverse literature.
-            </div>
-          </div>
-          <!--project 1-->
-          <div class="my-project-experience-company-block">
-            <h4 class="my-work-experience-position">
-              <a
-                href="https://sergeiantonenko.github.io/goit-project-group15/"
-                target="_blank"
-                class="my-work-experience-link"
-                >Focus.Frame</a
-              >
-              <a
-                href="https://github.com/SergeiAntonenko/goit-project-group15"
-                target="_blank"
-                class="my-work-experience-link-git"
-                >GitHub</a
-              >
-              <span class="my-work-experience-company">(HTML, CSS, Trello)</span>
-            </h4>
-            <p class="my-work-experience-period">
-              Role: Scrum master, Developer (our mentors section, hero section, js script for modal
-              menu, lazy loading). Team project.
-            </p>
-            <div class="my-project-experience">
-              A website offering access to quality education in the field of photography.
-            </div>
-          </div>
-        </div>
-        <!--my work experience-->
-        <div class="my-work-experience-section">
-          <h3 class="main-content-title">Work Experience</h3>
-          <!--company 3-->
-          <div class="my-work-experience-company-block">
-            <h4 class="my-work-experience-position">
-              Manual QA Engineer <span class="my-work-experience-company">Smile</span>
-            </h4>
-            <p class="my-work-experience-period">November 2021 - up to now</p>
-            <ul class="my-work-experience-duties">
-              <li class="my-work-experience-duty">Create test cases, bug reports</li>
-              <li class="my-work-experience-duty">Functional/Non-Functional Testing</li>
-              <!-- <li class="my-work-experience-duty">Cross browser testing</li> -->
-              <!-- <li class="my-work-experience-duty">Regression testing</li> -->
-              <li class="my-work-experience-duty">API testing</li>
-              <!-- <li class="my-work-experience-duty">Redmine</li> -->
-              <li class="my-work-experience-duty">GitHub</li>
-              <li class="my-work-experience-duty">Magento</li>
+
+          <section class="aside-container">
+            <h3 class="section__title">QA & Testing</h3>
+            <ul class="aside__list">
+              <li class="aside__item"><span class="aside__item-color">Functional/Non-Functional</span></li>
+              <li class="aside__item"><span class="aside__item-color">Test Design & Strategies</span></li>
+              <li class="aside__item"><span class="aside__item-color">Regression & Mobile Testing</span></li>
+              <li class="aside__item"><span class="aside__item-color">Bug Reports & Checklists</span></li>
+              <li class="aside__item"><span class="aside__item-color">Jira / TestRail / Redmine</span></li>
             </ul>
-          </div>
-          <!--company 2-->
-          <div class="my-work-experience-company-block">
-            <h4 class="my-work-experience-position">
-              Manual QA Engineer <span class="my-work-experience-company">QATestLab</span>
-            </h4>
-            <p class="my-work-experience-period">June 2021 - November 2021</p>
-            <ul class="my-work-experience-duties">
-              <li class="my-work-experience-duty">Create test cases, bug reports, checklists</li>
-              <li class="my-work-experience-duty">Mobile testing</li>
-              <!-- <li class="my-work-experience-duty">Functional testing</li> -->
-              <li class="my-work-experience-duty">Ad-hoc testing</li>
-              <li class="my-work-experience-duty">Test Design</li>
-              <li class="my-work-experience-duty">Usability testing</li>
+          </section>
+
+          <section class="aside-container">
+            <h3 class="section__title">Frontend & Tools</h3>
+            <ul class="aside__list">
+              <li class="aside__item"><span class="aside__item-color">JavaScript / TypeScript</span></li>
+              <li class="aside__item"><span class="aside__item-color">HTML5 / CSS3 / DOM</span></li>
+              <li class="aside__item"><span class="aside__item-color">React / Node.js</span></li>
+              <li class="aside__item"><span class="aside__item-color">REST API / Postman / DevTools</span></li>
+              <li class="aside__item"><span class="aside__item-color">Git / GitHub / Linux / Magento</span></li>
             </ul>
-          </div>
-        </div>
-        <!--my education-->
-        <div class="my-education-section">
-          <h3 class="main-content-title">Education</h3>
-          <!--company 3-->
-          <div>
-            <h4 class="my-education-company-name">GoIT courses</h4>
-            <p class="my-education-item">Full Stack Web Developer Course</p>
-            <p class="my-study-period">September 2023 - August 2024</p>
-            <p class="my-education-item">QA Engineer Course</p>
-            <p class="my-study-period">April 2021 - August 2021</p>
-          </div>
-          <!--company 2-->
-          <div>
-            <h4 class="my-education-company-name">QATestLab Training Center</h4>
-            <p class="my-education-item">Fundamentals of Software Testing Course</p>
-            <p class="my-study-period">April 2021 - May 2021</p>
-          </div>
-          <!--company 1-->
-          <div>
-            <h4 class="my-education-company-name">
-              Kamianets-Podilskyi National Ivan Ohiienko University
-            </h4>
-            <p class="my-education-item">
-              Diploma of Specialist in "Foreign Philology", Master’s Degree Diploma in Education
-            </p>
-            <p class="my-study-period">Septermber 1999 - June 2005</p>
-          </div>
-        </div>
-      </div>
-      <!-- sidebar section-->
-      <aside class="sidebar-section">
-        <div class="image-section">
-          <img src="img/photo.jpg" width="150" alt="my photo" />
-        </div>
-        <!-- contacts section-->
-        <div class="contacts-section">
-          <h3 class="sidebar-title">Contacts</h3>
-          <ul class="social-section-list">
-            <li class="social-item">
-              <a class="contacts-section-link" href="tel:+380953491737">+380 95 349 17 37</a>
-            </li>
-            <li class="social-item">
-              <a class="contacts-section-link" href="mailto:julia.roslikov@gmail.com"
-                >julia.roslikov@gmail.com</a
-              >
-            </li>
-            <li class="social-item">
-              <a
-                class="contacts-section-link"
-                target="_blank"
-                href="https://www.linkedin.com/in/yuliya-roslikova/?locale=en_US"
-                >LinkedIn</a
-              >
-            </li>
-            <li class="social-item">
-              <a
-                class="contacts-section-link"
-                target="_blank"
-                href="https://github.com/YuliyaRoslikova?tab=repositories"
-                >GitHub</a
-              >
-            </li>
-            <li class="social-item">
-              <a class="contacts-section-link" href="tel:+380953491737">Khmelnytsky, Ukraine</a>
-            </li>
-          </ul>
-        </div>
-        <!-- tech skills section-->
-        <div class="tech-skills-section">
-          <h3 class="sidebar-title">Tech skills</h3>
-          <ul class="tech-skills-list">
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">HTML5, CSS3</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">JavaScript</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">React, Redux</span>
-            </li>
-            <li class="tech-skills-item"><span class="tech-skills-item-text">Node.js</span></li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">REST API, Postman</span>
-            </li>
-            <li class="tech-skills-item"><span class="tech-skills-item-text">Vite</span></li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">GIT, GitHub</span>
-            </li>
-            <li class="tech-skills-item"><span class="tech-skills-item-text">Magento</span></li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">Functional/Non-Functional Testing</span>
-            </li>
-            <li class="tech-skills-item"><span class="tech-skills-item-text">Test Design</span></li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">Jira, Mantis, Redmine</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">TestRail, TestLink</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">Bug reports, Test cases, Checklists</span>
-            </li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">Basic knowledge of SQL</span>
-            </li>
-            <li class="tech-skills-item"><span class="tech-skills-item-text">Devtools</span></li>
-            <li class="tech-skills-item">
-              <span class="tech-skills-item-text">Windows/Mac OS/Linux</span>
-            </li>
-          </ul>
-        </div>
-        <!-- soft skills section-->
-        <div class="soft-skills-section">
-          <h3 class="sidebar-title">Soft skills</h3>
-          <ul class="soft-skills-list">
-            <li class="soft-skills-item">
-              <span class="soft-skills-item-text">Agile, Scrum</span>
-            </li>
-            <li class="soft-skills-item"><span class="soft-skills-item-text">Team player</span></li>
-            <li class="soft-skills-item">
-              <span class="soft-skills-item-text">Self-organizing</span>
-            </li>
-            <li class="soft-skills-item">
-              <span class="soft-skills-item-text">Communicative</span>
-            </li>
-            <li class="soft-skills-item"><span class="soft-skills-item-text">Feedback</span></li>
-          </ul>
-        </div>
-        <div class="soft-skills-section">
-          <h3 class="sidebar-title">Languages</h3>
-          <ul class="soft-skills-list">
-            <li class="soft-skills-item">
-              <span class="soft-skills-item-text">English <br />Upper intermediate</span>
-            </li>
-            <li class="soft-skills-item">
-              <span class="soft-skills-item-text">Ukrainian native</span>
-            </li>
-          </ul>
+          </section>
+
+          <section class="aside-container">
+            <h3 class="section__title">Methodologies & Soft</h3>
+            <ul class="aside__list">
+              <li class="aside__item"><span class="aside__item-color">Agile / Scrum Framework</span></li>
+              <li class="aside__item"><span class="aside__item-color">Team Leadership & Mentoring</span></li>
+              <li class="aside__item"><span class="aside__item-color">Analytical & Self-Organizing</span></li>
+            </ul>
+          </section>
+
+          <section class="aside-container">
+            <h3 class="section__title">Languages</h3>
+            <ul class="aside__list">
+              <li class="aside__item"><span class="aside__item-color">English - Upper-Intermediate (B2)</span></li>
+              <li class="aside__item"><span class="aside__item-color">Ukrainian - Native</span></li>
+            </ul>
+          </section>
         </div>
       </aside>
+
+      <main class="main__container">
+        <header class="header">
+          <div>
+            <h2 class="position">QA Engineer (with Frontend Expertise)</h2>
+            <h1 class="name">Yuliya Roslikova</h1>
+          </div>
+          <div class="buttons">
+            <a href="https://www.linkedin.com/in/yuliya-roslikova/" class="linkedin-btn" target="_blank">
+              LinkedIn
+            </a>
+            <button class="button download-btn" onclick="window.print()">Download PDF</button>
+          </div>
+        </header>
+
+        <section class="section">
+          <p class="description">
+            Detail-oriented QA Engineer with over 4 years of commercial experience in manual software testing, significantly enhanced by a solid technical foundation in Full-Stack Development. Deeply understands the software development lifecycle (SDLC), DOM manipulation, and modern web architectures (React/Node.js). Exceptional skills in isolating frontend bugs and performing comprehensive API testing. Passionate about quality assurance with a long-term goal of transitioning into Test Automation (AQA).
+          </p>
+        </section>
+
+        <section class="section">
+          <h3 class="section__title">Work Experience</h3>
+          <ul class="work-list">
+            <li class="work-item">
+              <h4 class="work__position">
+                Manual QA Engineer <span class="work__company">@ Smile</span>
+                <span class="data">11/2021 - Present <span class="separator">|</span> Remote (Ukraine)</span>
+              </h4>
+              <ul class="work-tasks">
+                <li class="work__position-task">Perform comprehensive functional, non-functional, and regression testing for large-scale e-commerce platforms (Magento) and enterprise web applications.</li>
+                <li class="work__position-task">Create and optimize clear test documentation, including test cases, checklists, and detailed bug reports in Jira/Redmine.</li>
+                <li class="work__position-task">Conduct API testing using Postman to verify backend integration points, response codes, and data structures.</li>
+                <li class="work__position-task">Utilize browser DevTools and GitHub to effectively isolate frontend issues, analyze rendering errors, and collaborate with developers.</li>
+              </ul>
+            </li>
+
+            <li class="work-item">
+              <h4 class="work__position">
+                Manual QA Engineer <span class="work__company">@ QATestLab</span>
+                <span class="data">06/2021 - 11/2021 <span class="separator">|</span> Khmelnytskyi, Ukraine</span>
+              </h4>
+              <ul class="work-tasks">
+                <li class="work__position-task">Executed mobile, usability, and ad-hoc testing for various cross-platform applications.</li>
+                <li class="work__position-task">Applied test design techniques to create efficient test suites, reducing regression testing time.</li>
+                <li class="work__position-task">Logged bugs and tracked their lifecycle using specialized issue-tracking systems (Mantis/Jira).</li>
+              </ul>
+            </li>
+
+            <li class="work-item">
+              <h4 class="work__position">
+                Sales Team Leader & Manager <span class="work__company">@ Various Companies</span>
+                <span class="data">2005 - 2021 <span class="separator">|</span> Ukraine</span>
+              </h4>
+              <ul class="work-tasks">
+                <li class="work__position-task">Managed and mentored sales teams, monitored KPIs, resolved operational crises, and ensured high customer satisfaction, demonstrating top-tier communication, conflict resolution, and leadership skills.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section print-hide">
+          <h3 class="section__title">Technical Foundation</h3>
+          <ul class="work-list">
+            <li class="work-item">
+              <h4 class="work__position">Frontend & Automation Prep <span class="work__company">(Educational Projects)</span></h4>
+              <p class="project-summary-text">
+                Built complex web applications during Full-Stack training, providing a deep understanding of DOM, client-server architecture, and API integration—essential skills for advanced QA.
+              </p>
+              <ul class="work-tasks">
+                <li class="work__position-task">
+                  <strong>Image Search Service (TypeScript):</strong> Strict typing and async HTTP requests via Axios.
+                  <a href="https://goit-typescript-hw-02-liart-eta.vercel.app/" target="_blank" class="project-link">[Live]</a>
+                  <a href="https://github.com/YuliyaRoslikova/goit-typescript-hw-02" target="_blank" class="project-link">[GitHub]</a>
+                </li>
+                <li class="work__position-task">
+                  <strong>Phonebook App (React, Redux):</strong> Client-side state management with JWT user registration.
+                  <a href="https://github.com/YuliyaRoslikova/goit-react-hw-08" target="_blank" class="project-link">[GitHub]</a>
+                </li>
+                <li class="work__position-task">
+                  <strong>Bookshelf (JavaScript, Vite):</strong> <em>Role: Scrum Master.</em> Developed responsive modals and state navigation scripts.
+                  <a href="https://sergeiantonenko.github.io/goit-js-project-group13/" target="_blank" class="project-link">[Live]</a>
+                  <a href="https://github.com/SergeiAntonenko/goit-js-project-group13" target="_blank" class="project-link">[GitHub]</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3 class="section__title">Education</h3>
+          <ul class="education-list">
+            <li class="education-item">
+              <span class="education-degree">Full Stack Web Developer Course</span>
+              <span class="separator">|</span> <span class="education-school">GoIT Academy</span>
+              <span class="separator">|</span> <span class="education-date">09/2023 — 08/2024</span>
+            </li>
+            <li class="education-item">
+              <span class="education-degree">QA Engineer & Software Testing</span>
+              <span class="separator">|</span> <span class="education-school">GoIT / QATestLab</span>
+              <span class="separator">|</span> <span class="education-date">04/2021 — 08/2021</span>
+            </li>
+            <li class="education-item">
+              <span class="education-degree">Master's Degree (Foreign Philology)</span>
+              <span class="separator">|</span> <span class="education-school">Ivan Ohiienko University</span>
+              <span class="separator">|</span> <span class="education-date">1999 — 2005</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+
     </div>
   </body>
 </html>

@@ -1,296 +1,484 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f5f7fa;
+  background-color: #f1f5f9;
+  color: #334155;
+  line-height: 1.6;
 }
 
-.main-container {
+.wrapper {
+  background-color: #ffffff;
+  display: block;
+  margin: 0;
+  max-width: none;
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08);
+}
+
+.sidebar {
+  background-color: #0f172a; 
+  color: #94a3b8;
+  width: 100%;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.sidebar-content {
   display: flex;
-  flex-direction: row-reverse;
-  width: 1200px;
-  /* need to be commented out for printing in PDF  */
-  /* background-color: #fff; */
-  /*  */
-  margin: 10px auto;
-  /* need to be commented out for printing in PDF  */
-  /* box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1); */
-  /*  */
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
-/* main content section */
-
-.main-content-section {
-  padding: 40px 35px;
+.my-photo {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  object-position: center 10%;
+  border-radius: 50%; 
+  border: 4px solid #1e293b;
+  margin: 0 auto 30px;
 }
 
-.main-content-title {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  color: #000;
+.main__container {
+  padding: 30px 20px;
 }
 
-/* about me section */
-
-.about-me-section {
-  margin: 0 0 40px 0;
+.contacts-container {
+  margin: 30px 0 0 0;
+  width: 100%;
+  text-align: left;
 }
 
-.about-me-profession {
-  font-weight: bold;
+.contact {
+  margin-bottom: 12px;
+}
+
+.contacts-link {
+  display: block;
+  color: #e2e8f0;
   font-size: 14px;
-  line-height: 17px;
-  color: #000;
-  margin: 0 0 20px 0;
-}
-
-.about-me-name {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 55px;
-  color: #000;
-  margin: 0 0 25px 0;
-}
-
-.about-me-description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-}
-
-.my-projects-section {
-  margin: 0 0 30px 0;
-  /* margin: 0 0 50px 0; */
-}
-
-.my-projects-list {
-  padding: 0 0 0 17px;
-}
-
-.my-projects-item {
-  color: #000;
-  font-weight: bold;
-}
-
-.my-projects-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-}
-
-.my-projects-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  margin-left: 5px;
-}
-
-.my-projects-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  margin-left: -18px;
-}
-
-/* my work experience */
-
-.my-work-experience-section {
-  margin-bottom: 10px;
-}
-
-.my-work-experience-company {
-  /* color: #fb6d3a; */
-  color: #441dc4;
-}
-
-.my-work-experience-position {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 0 10px 0;
-}
-
-.my-work-experience-link {
-  color: navy;
   text-decoration: none;
+  transition: color 0.2s;
+}
+.contacts-link:hover {
+  color: #ea580c;
 }
 
-.my-work-experience-link-git {
-  text-decoration-line: underline;
+.contacts-link-type {
+  color: #f8fafc;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
 }
 
-.my-work-experience-link:hover {
+.aside-container {
+  margin: 40px 0 0 0;
+  width: 100%;
+  text-align: left;
+}
+
+.aside__list {
+  list-style: none;
+}
+
+.aside__item {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.aside__item-color {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 30px;
+}
+
+.position {
+  color: #ea580c; 
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.name {
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.linkedin-btn,
+.button {
+  display: inline-block;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.linkedin-btn {
+  background-color: #ea580c;
+}
+
+.linkedin-btn:hover { 
+  background-color: #c2410c; 
+}
+
+.button:hover { 
+  background-color: #1e293b; 
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sidebar .section__title {
+  color: #f8fafc;
+  font-size: 16px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.section__title {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.description {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.work-list {
+  list-style: none;
+}
+
+.work-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.work__position {
+  color: #0f172a;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.work__company {
+  font-weight: 700;
+  color: #ea580c;
+}
+
+.data {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.separator {
+  color: #cbd5e1;
+  margin: 0 6px;
+}
+
+ul.work-tasks {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.work__position-task {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.project-summary-text {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.project-link {
+  color: #ea580c;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.project-link:hover {
   text-decoration: underline;
 }
 
-.my-work-experience-period {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  color: rgb(10, 91, 10);
-  /* color: #a8a8a8; */
-  margin: 0 0 10px 0;
+.education-list {
+  list-style: none;
 }
 
-.my-work-experience-duties,
-.my-project-experience-duties {
-  padding: 0 0 0 18px;
-}
-
-.my-project-experience,
-.my-work-experience-duty {
-  font-style: normal;
-  font-weight: normal;
+.education-item {
+  margin-bottom: 8px;
   font-size: 14px;
-  line-height: 24px;
-  color: #595959;
 }
 
-.my-project-experience-duty {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-  list-style-type: none;
+.education-degree {
+  font-weight: 700;
+  color: #0f172a;
 }
 
-.my-project-experience-company-block,
-.my-work-experience-company-block {
-  margin: 15px 15px;
+.education-school {
+  font-weight: 500;
+  color: #334155;
 }
 
-/* my education */
-
-.my-education-company-name {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 0 10px 0;
-  /* color: #fb6d3a; */
-  color: #441dc4;
+.education-date {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.my-education-item {
-  font-size: 14px;
-  line-height: 17px;
-  color: #000;
-  margin: 0 0 10px 0;
+
+@media (min-width: 992px) {
+  body { padding: 40px 20px; }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buttons { 
+    margin-top: 0; 
+  }
+
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1100px;
+    border-radius: 12px;
+  }
+
+  .sidebar {
+    width: 300px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .main__container {
+    padding: 50px 60px;
+    flex: 1;
+  }
+
+  .name { 
+    font-size: 34px; 
+  }
 }
 
-.my-study-period {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  /* color: #a8a8a8; */
-  color: rgb(10, 91, 10);
-  margin: 0 0 20px 0;
-}
 
-/* sidebar-section */
+@media print {
 
-.sidebar-section {
-  background-color: #77797b;
-  width: 570px;
-  padding: 40px;
-}
+  @page { 
+    size: A4;
+    margin: 15mm 20mm; 
+  }
+  
+  body { 
+    background: #fff; 
+    color: #1e293b; 
+    padding: 0; 
+    margin: 0;
+  }
 
-.contacts-section,
-.tech-skills-section,
-.soft-skills-section,
-.socials-section {
-  margin: 50px 0 0 40px;
+  .wrapper {
+    display: flex !important;
+    flex-direction: column; 
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0 5mm !important; 
+  }
 
-}
+  .sidebar, .sidebar-content {
+    display: contents !important;
+  }
 
-.sidebar-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  color: #fff;
-  margin-bottom: 10px;
-}
+  .header {
+    order: 1 !important;
+    margin-bottom: 20px !important; /* Додаємо простір під ім'ям */
+    padding-bottom: 12px !important;
+    border-bottom: 1px solid #e2e8f0 !important; /* Тонка красива лінія-розділювач */
+  }
 
-.image-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-}
+  .contacts-container {
+    order: 2 !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 0 25px 0 !important; /* Відступ перед початком резюме */
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+  }
+  
+  .contacts-container .contact {
+    display: inline-block !important;
+    margin: 0 20px 6px 0 !important; /* Відступи між імейлом, телефоном тощо */
+  }
+  
+  .contacts-link-type {
+    display: inline !important;
+    margin-right: 4px !important;
+    color: #64748b !important;
+  }
 
-/* contacts section */
+  .contacts-link-type::after { content: ":"; }
+  .contacts-link {
+    display: inline !important;
+    color: #0f172a !important;
+    font-weight: 600 !important;
+  }
 
-.contacts-section-type {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
-  margin-right: 7px;
-}
+  .main__container { 
+    order: 3 !important; 
+    padding: 0 !important; 
+    flex: none;
+  }
 
-.contacts-section-link {
-  text-decoration: none;
-  color: #fff;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-}
+  .aside-container {
+    order: 4 !important;
+    width: 100% !important;
+    margin: 25px 0 0 0 !important;
+  }
+  
+  .sidebar .section__title {
+    font-size: 15px !important;
+    margin-bottom: 8px !important;
+    padding: 0 !important;
+    border: none !important;
+    color: #0f172a !important;
+  }
+  
+  .aside__list { 
+    display: block !important; 
+    padding: 0 !important; 
+    margin: 0 !important; 
+  }
 
-/* tech skills section */
+  .aside__item { 
+    display: inline !important;
+    margin: 0 !important; 
+  }
 
-.tech-skills-list {
-  padding: 0 0 0 17px;
-}
+  .aside__item::after { 
+    content: " • "; 
+    color: #94a3b8; 
+    margin: 0 6px; 
+  }
 
-.tech-skills-item,
-.soft-skills-item,
-.social-item {
-  color: #441dc4;
-}
+  .aside__item:last-child::after { 
+    content: ""; 
+  }
 
-.tech-skills-item-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
-}
+  .aside__item-color { 
+    color: #334155 !important; 
+    font-weight: 600; 
+  }
 
-/* soft skills section */
+  .my-photo, 
+  .buttons, 
+  .download-btn { 
+    display: none !important; 
+  }
+  
+  ul.work-tasks {
+    padding-left: 20px !important; 
+    list-style-type: disc !important; 
+    margin-top: 6px !important;
+  }
+  .work__position-task { margin-bottom: 6px !important; }
 
-.soft-skills-list,
-.social-section-list {
-  padding: 0 0 0 17px;
-}
+  .section { 
+    margin-bottom: 30px !important; /* Збільшено з 15px для красивих відступів */
+  }
+  
+  .work-item { 
+    margin-bottom: 22px !important; /* Відступ між різними місцями роботи */
+  }
+  
+  .education-item {
+    margin-bottom: 10px !important; /* Відступ між курсами */
+  }
+  
+  .education-date {
+    display: inline !important;
+  }
+  
+  .project-link {
+    color: #ea580c !important;
+  }
 
-.soft-skills-item-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
-}
+  .work-item, 
+  .aside-container, 
+  .contacts-container, 
+  .education-item { 
+    break-inside: avoid; 
+  }
 
-/* socials section */
+  .header { 
+    break-after: avoid;
+   }
 
-.socials-section {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #fff;
+  a { 
+    text-decoration: none !important; color: inherit !important;
+  }
+
+  .print-hide {
+    display: none;
+  }
 }
